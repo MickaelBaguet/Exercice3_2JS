@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" />
+  </form>
+  <!-- Script servant à afficher le contenu du champ dès que l'on appuie sur le clavier -->
+  <script type="text/javascript">
+    // On prend l'id de l'élément en question (de la text box)
+    var element = document.getElementById('lastname');
+    // Utilisation de la méthode addEventListener qui met en place une fonction dès qu'un événement spécifié est activé
+    // Ici dès qu'un input est réalisé (taper au clavier) on affiche une alerte avec la value de la text box
+    element.addEventListener('input', function()
+      {
+        alert(element.value);
+      }
+    );
+
+  </script>
+</body>
+</html>
